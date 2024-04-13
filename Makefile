@@ -1,3 +1,5 @@
+poetry-config-list:
+	poetry config --list
 mypy:
 	mypy .
 ruff:
@@ -26,3 +28,5 @@ clean-pycache:
 clean: clean-package clean-pycache
 install-dev-req: upgrade-pip install-linting-req install-testing-req install-req
 install-prod-req: upgrade-pip install-req
+run-dev-server:
+	python3 src/main.py
