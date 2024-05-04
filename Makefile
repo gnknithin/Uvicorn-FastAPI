@@ -30,3 +30,5 @@ install-dev-req: upgrade-pip install-linting-req install-testing-req install-req
 install-prod-req: upgrade-pip install-req
 run-dev-server:
 	python3 src/main.py
+run-new-server:
+	python3 src/main_new.py
